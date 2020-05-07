@@ -12,7 +12,6 @@ header {
     width: 100%;
     height: auto;
     background: black;
-    
 }
 header img {
     display: block;
@@ -26,13 +25,11 @@ header .title {
     text-align: center;
     padding-bottom: 10px;
 }
-
 #header-1 .title {
     padding: 20px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
-
 #header-1 {
     width: 100%;
     height: auto;
@@ -40,7 +37,6 @@ header .title {
     font-weight: bold;
     font-size: 25px;
 }
-
 .section {
     padding-top: 20px;
     width: 100%;
