@@ -5,14 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 p, h1 {
     text-transform: uppercase;
 }
+
 header {
     width: 100%;
     height: auto;
     background: black;
 }
+
 header h3{
     text-align: center;
     color: white;
@@ -30,11 +33,6 @@ header .title {
     text-align: center;
     padding-bottom: 10px;
 }
-#header-1 .title {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-}
 #header-1 {
     width: 100%;
     height: auto;
@@ -42,6 +40,12 @@ header .title {
     font-weight: bold;
     font-size: 25px;
 }
+#header-1 .title {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .section {
     padding-top: 20px;
     width: 100%;
@@ -78,7 +82,6 @@ header .title {
 }
 .section-1 p {
     font-family: 'Quicksand', sans-serif;
-    
     text-align: center;
 }
 .section-2 {
@@ -103,7 +106,12 @@ header .title {
     display: block;
     align-items: center;
     justify-content: center;
-    
+}
+.cards .btns a{
+    padding: 5px;
+}
+.cards .btns form{
+    padding: 10px;
 }
 
 .cards .card-1 {
@@ -117,7 +125,7 @@ header .title {
     box-shadow: 5px 5px rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.5s ease;
-    cursor: pointer;
+    
     margin: 20px;
 }
 .cards .card-2 {
@@ -206,12 +214,14 @@ header .title {
 .social p {
     font-size: 20px;
 }
-.social i{margin: 20px;}
+.social a i{margin: 20px; color: black;}
 footer {
+    width: 100%;
+
     text-align: center;
     font-size: 15px;
     font-family: 'Oswald', sans-serif;
-    margin: 20px;
+    
 }
 footer p {
     margin: 5px;
