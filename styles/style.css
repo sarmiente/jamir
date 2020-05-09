@@ -100,16 +100,15 @@ header .title {
     font-family: 'Comfortaa', cursive;
     
 }
-.cards{
+.cards {
     width: 100%;
     height: auto;
     display: block;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
-.cards .btns a{
-    padding: 5px;
-}
+
 .cards .btns form{
     padding: 10px;
 }
@@ -117,15 +116,14 @@ header .title {
 .cards .card-1 {
     display: grid;
     position: relative;
-    
     grid-template-rows: 50px 50px 50px;
+    
     grid-template-areas: "card-title" "card-text" "card-price";
     border-radius: 18px;
-    background: whitesmoke;
+    background: #e8ecf1;
     box-shadow: 5px 5px rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.5s ease;
-    
     margin: 20px;
 }
 .cards .card-2 {
@@ -134,7 +132,7 @@ header .title {
     grid-template-rows: 50px 50px 50px;
     grid-template-areas: "card-title" "card-text" "card-price";
     border-radius: 18px;
-    background: whitesmoke;
+    background:#bdc3c7;
     box-shadow: 5px 5px rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.5s ease;
@@ -147,7 +145,7 @@ header .title {
     grid-template-rows: 50px 50px 50px;
     grid-template-areas: "card-title" "card-text" "card-price";
     border-radius: 18px;
-    background: whitesmoke;
+    background: #dadfe1;
     box-shadow: 5px 5px rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.5s ease;
@@ -195,7 +193,6 @@ header .title {
     height: auto;
     text-align: center;
     padding: 20px;
-    
 }
 .politica h1, p{
     font-family: monospace;
@@ -215,22 +212,23 @@ header .title {
     font-size: 20px;
 }
 .social a i{margin: 20px; color: black;}
+
+
+
 footer {
     width: 100%;
-
     text-align: center;
     font-size: 15px;
     font-family: 'Oswald', sans-serif;
-    
 }
 footer p {
     margin: 5px;
 }
-
 footer a {
     text-decoration: none;
     color: teal;
 }
+
 
 @media screen and (min-width:620px){
     .section-1 h1 {
@@ -239,19 +237,77 @@ footer a {
     .section-1 p{
         font-size: 20px;
     }
+    .card-title h1{
+        
+        font-size: 20px;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+    .card-price{
+        grid-area: "card-price";
+        text-transform: uppercase;
+        font-family: 'Comfortaa', cursive;
+        font-size: 15px;
+    }
+    
+    .cards{
+        display: flex;
+   }
+    .cards .card-1 {
+        margin: 10px;
+        
+        grid-template-columns: 180px;
+      
+    }
+    .cards .card-2 {
+        margin: 10px;
+        grid-template-columns: 180px;
+      
+    }
+    .cards .card-3 {
+        margin: 10px;
+        grid-template-columns: 180px;
+    }
+}
+
+@media screen and (min-width: 840px){
+    .cards{
+        display: flex;
+   }
+    .cards .card-1 {
+        margin: 15px;
+        grid-template-columns: 250px;
+      
+    }
+    .cards .card-2 {
+        margin: 15px;
+        grid-template-columns: 250px;
+      
+    }
+    .cards .card-3 {
+        margin: 15px;
+        grid-template-columns: 250px;
+    
+}
+}
+
+@media screen and (min-width: 1040px){
     .cards{
         display: flex;
    }
     .cards .card-1 {
         grid-template-columns: 300px;
-      
     }
+    
     .cards .card-2 {
         grid-template-columns: 300px;
       
     }
     .cards .card-3 {
         grid-template-columns: 300px;
-      
+    }
+    .card-text{
+        font-size: 15px;
     }
 }
