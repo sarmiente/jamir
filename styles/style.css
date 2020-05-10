@@ -228,7 +228,15 @@ header .title {
 }
 .social a i{margin: 20px; color: black;}
 
-
+.whatsapp {
+    position: fixed;
+    padding: 10px;
+    right: 0px;
+    bottom: 0px;
+}
+.whatsapp img {
+    width: 50px;
+}
 
 footer {
     width: 100%;
@@ -245,7 +253,9 @@ footer a {
 }
 
 
+
 @media screen and (min-width:620px){
+ 
     .section-1 h1 {
          font-size: 25px;
     }
@@ -287,6 +297,9 @@ footer a {
 }
 
 @media screen and (min-width: 840px){
+    .whatsapp img {
+        width: 80px;
+    }
     .cards{
         display: flex;
    }
